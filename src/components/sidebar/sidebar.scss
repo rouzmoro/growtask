@@ -1,0 +1,44 @@
+.sidebar {
+    &__container {
+        position: sticky;
+        top: 0;
+    }
+
+    &__card {
+        padding: 20px;
+        box-shadow: 0 0 10px 2px rgba(0, 11, 64, 0.1);
+        border-radius: 24px;
+    }
+
+    &__info {
+        margin-top: 12px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 2px solid var(--gray-lighter);
+        font-size: 13px;
+        line-height: 150%;
+        color: var(--gray-black);
+    }
+
+    &__row-item:first-child {
+        color: var(--gray-dark);
+    }
+
+    &__row--discount &__row-item:last-child {
+        color: var(--error-dark);
+        font-weight: 700;
+    }
+
+    &__row--total &__row-item {
+        color: var(--gray-black);
+    }
+
+    &__btn-primary {
+        margin-top: 20px;
+        width: 100%;
+    }
+}

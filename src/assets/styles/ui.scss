@@ -1,0 +1,137 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Vladivostok', sans-serif;
+    line-height: 110%;
+    margin: 0;
+}
+
+h1 {
+    font-size: 76px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+.checkbox {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: url('../icons/checkbox.svg');
+    margin: 2px;
+
+    &:hover {
+        background: url('../icons/checkbox-hover.svg');
+    }
+
+    &:checked {
+        background: url('../icons/checkbox-checked.svg');
+    }
+
+    &:checked:hover {
+        background: url('../icons/checkbox-checked-hover.svg');
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 40px;
+    border-radius: 12px;
+    padding: 8px;
+    background: var(--gray-lighter);
+    font-weight: 600;
+
+    &:has(&__text) {
+        padding: 8px 16px 8px 12px;
+    }
+
+    &:hover {
+        background: var(--main-lighter);
+    }
+
+    &:active {
+        background: var(--main-light);
+    }
+
+    &:disabled {
+        background: var(--disable-light);
+        color: var(--gray-medium);
+    }
+
+    &__icon {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.btn--small {
+    height: 32px;
+
+    & .btn__icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+.btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 48px;
+    border-radius: 12px;
+    padding: 0 20px;
+    background: var(--main-medium);
+    color: var(--gray-white);
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 600;
+
+    &:hover {
+        background: var(--main-light);
+    }
+
+    &:active {
+        background: var(--main-dark);
+    }
+
+    &:disabled {
+        background: var(--disable-medium);
+        color: var(--gray-medium);
+    }
+}
+
+@media (max-width: 1365px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+}

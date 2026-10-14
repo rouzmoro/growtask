@@ -1,0 +1,40 @@
+.page {
+    &--cart {
+        padding-bottom: 40px;
+    }
+}
+
+.cart {
+    &__buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__products {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 1365px) {
+    .cart__products {
+        margin-top: 12px;
+    }
+
+    .cart__btn--select.btn {
+        padding: 8px;
+    }
+
+    .cart__btn--remove .btn__text {
+        font-size: 14px;
+        line-height: 130%;
+    }
+
+    .cart__btn--select .btn__text {
+        display: none;
+        padding: 8px;
+    }
+
+    .page--cart {
+        padding-bottom: 20px;
+    }
+}
