@@ -73,6 +73,9 @@ document.addEventListener('click', (event) => {
     if (event.target.closest('.navigation__location--cart')) {
         showPage('cart');
     }
+    if (event.target.closest('.navigation__to-cart')) {
+        showPage('cart');
+    }
     if (event.target.closest('.navigation__location--checkout')) {
         showPage('checkout');
     }
