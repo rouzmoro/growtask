@@ -1,5 +1,0 @@
-[[redirects]]
-  from = "/api/products"
-  to = "https://growtask.ru/test-front/api/products"
-  status = 200
-  force = true
